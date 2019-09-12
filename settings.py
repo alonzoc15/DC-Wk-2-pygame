@@ -5,7 +5,7 @@ import os
 TITLE = "How did the chicken cross the road!"
 WIDTH = 480
 HEIGHT = 500
-FPS = 60
+FPS = 35
 #Player properties
 PLAYER_ACC = 0.5
 font_name = 'Montserrat ExtraLight'

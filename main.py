@@ -108,6 +108,8 @@ class Game:
         if not self.running:
             return
         self.screen.fill(BGCOLOR)
+        self.background_image = pg.image.load(os.path.join(img_folder,"cfa_sandwhich.png"))
+        self.screen.blit(self.background_image, [0,0])
         self.draw_text("GAME OVER", 48, WHITE, WIDTH / 2, HEIGHT / 4)
         self.draw_text("Score: " + str(self.score), 22, WHITE, WIDTH / 2, HEIGHT / 2)
         self.draw_text("Press a key to play again", 22, WHITE, WIDTH / 2, HEIGHT * 3 / 4)
